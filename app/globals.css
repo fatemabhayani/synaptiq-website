@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-neutral text-navy font-body antialiased;
+}
+
+a {
+  @apply text-secondary transition-colors duration-200;
+}
+
+a:hover {
+  @apply text-accent;
+}
+
+.prose {
+  @apply text-navy font-body;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  @apply font-heading text-primary;
+}
+
+.prose strong {
+  @apply text-primary;
+}
+
+.prose a {
+  @apply text-secondary font-semibold underline decoration-2 underline-offset-4;
+}
+
+.prose table {
+  @apply w-full border border-silver/40 rounded-lg overflow-hidden shadow-sm;
+}
+
+.prose thead {
+  @apply bg-primary text-neutral;
+}
+
+.prose tbody tr:nth-child(even) {
+  @apply bg-neutral;
+}
+
+.prose tbody td,
+.prose thead th {
+  @apply px-4 py-3;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-secondary/60 bg-white/80 px-6 py-4 italic text-primary;
+}
+
+.prose ul {
+  @apply list-disc pl-6;
+}
+
+.prose ol {
+  @apply list-decimal pl-6;
+}
+
+.prose hr {
+  @apply border-secondary/40 my-12;
+}
